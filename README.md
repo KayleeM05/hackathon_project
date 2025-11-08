@@ -7,6 +7,8 @@ While working on my group Capstone Project from January 2025 to April 2025, I ha
 
 This application uses OPEN-AI to search through records, using the input needs of the user (desired seperation methods, flow rates, temperature, pressure, etc) in order to search and decide the best seperation method for the desired outcome.
 
+Runs on Modal or locally!
+
 How to run:
 
 # For Windows:
