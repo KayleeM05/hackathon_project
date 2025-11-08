@@ -6,7 +6,7 @@ from pathlib import Path
 from openai import OpenAI, OpenAIError
 
 image_file = "aichemi.png"
-USE_MODAL = True  # set False to use the local OpenRouter client path
+USE_MODAL = False  # set False to use the local OpenRouter client path
 MODAL_URL = "https://kayleemckinney345--hackathon-aichemi-project-router.modal.run"  # from `modal deploy`
 
 # for MODAL
@@ -63,7 +63,7 @@ def call_llm(client: OpenAI, prompt: str, model: str = "openrouter/auto", max_to
 # tiny ui
 
 def main():
-    # laods keys and onfigures the client
+    # laods keys and configures the client
     client = None
     if not USE_MODAL:
         api_key = load_openrouter_key()
@@ -115,8 +115,8 @@ def main():
 
 
             try:
-                answer = call_llm(client, prompt) # calls the OpenRouter
-                answer = call_llm_via_modal(prompt) # calls for Modal
+                answer = call_llm(client, prompt) # calls locally
+                # answer = call_llm_via_modal(prompt) # calls for Modal
                 if not window.was_closed():
                     window["-RESP-"].update(disabled=False)
                     window["-RESP-"].update(answer)
