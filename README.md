@@ -20,7 +20,7 @@ python aichemi_app.py
 
 # For macOS/ Linux
 ```python
-cd /path/to/aichemi_app
+cd /path/to/aichemi_app.py
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
