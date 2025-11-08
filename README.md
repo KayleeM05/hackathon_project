@@ -1,4 +1,5 @@
-# hackathon_project
+# Hackathon Project
+### November 2025
 * My initial idea for the hackathon, being **AICHEMI**
 
 ## What is AICHEMI?
